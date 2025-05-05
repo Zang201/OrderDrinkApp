@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.AmountMenuActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_MaDonXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Mã đơn cần xóa"
+        app:hintTextColor="@color/brown"
+        app:boxStrokeColor="@color/brown"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/brown"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/brown"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/txt_thongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Bạn có chắc chắn muốn xóa ?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dongY_xoa_ThanhToan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_button_btn1"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Xác nhận xóa"
+            android:textColor="@color/white1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Huy_xoa_ThanhToan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_button_btn1"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Hủy"
+            android:textColor="@color/white1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddMenuActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/bg5"
+    >
+    <ImageView
+        android:id="@+id/img_addmenu_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_addmenu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm MENU"
+        android:fontFamily="@font/abril_fatface"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_addmenu_ThemHinh"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg8" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtl_addmenu_TenMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên món"
+            app:startIconDrawable="@drawable/ic_baseline_fastfood_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconTint="@color/brown"
+            app:hintTextColor="@color/brown"
+            android:textColorHint="@color/brown"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/brown"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/brown"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtl_addmenu_GiaTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá món"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconTint="@color/brown"
+            app:hintTextColor="@color/brown"
+            android:textColorHint="@color/brown"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/brown"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/brown"
+            android:inputType="number"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addmenu_LoaiMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Loại món"
+                app:startIconDrawable="@drawable/ic_baseline_restaurant_menu_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/brown"
+                app:hintTextColor="@color/brown"
+                android:textColorHint="@color/brown"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/brown"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_trangthaimon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtl_addmenu_LoaiMon"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/txt_addmenu_TinhTrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái:"
+                    android:textColor="@color/brown"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_addmenu_TinhTrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@id/txt_addmenu_TinhTrang"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <RadioButton
+                        android:id="@+id/rd_addmenu_ConMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Còn món"
+                        />
+                    <RadioButton
+                        android:id="@+id/rd_addmenu_HetMon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hết món"
+                        />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_addmenu_ThemMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_button_btn1"
+            android:elevation="5dp"
+            android:text="Thêm món"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/white1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--<Spinner-->
+<!--android:id="@+id/spn_addmenu_themloai"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_alignParentLeft="true"-->
+<!--android:layout_toStartOf="@id/btnimg_addmenu_nutthemloai"-->
+<!--android:layout_toLeftOf="@id/btnimg_addmenu_nutthemloai"-->
+<!--android:layout_centerInParent="true"-->
+<!--    >-->
+<!--</Spinner>-->

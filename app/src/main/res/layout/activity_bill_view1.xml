@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.BillView1"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Grey_400"
+        >
+        <ImageView
+            android:id="@+id/img_detailstatistic_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/img_detailstatistic_backbtn"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="10dp"
+            android:text="Xuất hóa đơn"
+            android:textAllCaps="true"
+            android:textColor="@color/brown"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caffe Master"
+                android:fontFamily="@font/almendra"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/brown"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Địa chỉ: 160A Lê Thiệt, Phú Thọ Hòa, Tân Phú\n Thành phố Hồ Chí Minh"
+                android:textAlignment="center"
+                android:fontFamily="@font/abril_fatface"
+                android:textColor="@color/brown"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HÓA ĐƠN BÁN HÀNG"
+                android:fontFamily="@font/abril_fatface"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvIDHOADON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID HÓA ĐƠN :1"
+                android:textSize="14sp"
+                android:fontFamily="@font/abril_fatface"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"/>
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="======================================"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="bold"-->
+            <!--                />-->
+            <TableLayout
+                android:id="@+id/tbLyaout"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+
+            </TableLayout>
+            <TextView
+                android:id="@+id/tvTongTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TỔNG TIỀN : 5.000.000 VND"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="======================================\nXIN CẢM ƠN QUÝ KHÁCH"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="bold"-->
+            <!--                />-->
+
+            <TextView
+                android:id="@+id/tvHovatenNV"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhân viên : Lê Văn Tèo"
+                android:fontFamily="@font/abril_fatface"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvNgayDat"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Ngày 21/09/2022"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"/>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/brown"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"/>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/brown"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="64dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="LƯU Ý\nHÓA ĐƠN GTGT chỉ xuất trong ngày\n XIN CẢM ƠN"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/abril_fatface"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

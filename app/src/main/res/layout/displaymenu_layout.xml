@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_TenMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="28sp"
+        android:fontFamily="@font/abril_fatface"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/brown"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/brown"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <GridView
+        android:id="@+id/gvDisplayMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp">
+
+
+    </GridView>
+
+</LinearLayout>

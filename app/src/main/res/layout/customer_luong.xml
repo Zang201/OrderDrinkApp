@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edt_button_btn"
+    app:cardCornerRadius="15dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/tongThogntin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Nhân viên huy - chạy bàn"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/btn_xoa_Luong"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_xoa_thanhtoan"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_backspace_241" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTHANGNAM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lương tháng 10/2022"
+            android:fontFamily="@font/abril_fatface"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/brown"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/tvLUONGMOTGIO"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Mức lương: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSOGIO"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Số giờ: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLUONGTHUONG"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lương thưởng:     250.000"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/abril_fatface"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/tvLUONGPHAT"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+
+            android:text="Lương phạt:       250.000"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/brown"/>
+        <TextView
+            android:id="@+id/tvTONGLUONG"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TỔNG LƯƠNG : 10000000"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:textSize="26sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

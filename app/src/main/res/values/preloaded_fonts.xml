@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/aclonica</item>
+        <item>@font/almendra</item>
+        <item>@font/amita</item>
+        <item>@font/arapey</item>
+        <item>@font/asset</item>
+        <item>@font/baloo</item>
+        <item>@font/bangers</item>
+        <item>@font/be_vietnam_thin</item>
+        <item>@font/cambay</item>
+        <item>@font/domine</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_extralight</item>
+        <item>@font/orbitron_medium</item>
+        <item>@font/source_sans_pro_extralight</item>
+    </array>
+</resources>
