@@ -10,7 +10,6 @@ Dự án sử dụng Java kết hợp Firebase và SQLite để lưu trữ dữ 
 - ➕ Thêm vào giỏ hàng, tăng/giảm số lượng
 - 🗃️ Order món theo bàn, thêm sửa xóa bàn, thêm sửa xóa món trên bàn.
 - 💳 Đặt hàng và xem tổng hóa đơn
-- 🧾 Lưu đơn hàng vào Firebase (Realtime Database hoặc Firestore)
 - 🗃️ Lưu giỏ hàng cục bộ bằng SQLite (offline)
 - 👤 Đăng ký/Đăng nhập người dùng bằng Firebase Authentication
 - 🔧 Quản lý đồ uống và đơn hàng dành cho Admin
@@ -25,7 +24,14 @@ Dự án sử dụng Java kết hợp Firebase và SQLite để lưu trữ dữ 
 - Lưu ảnh sản phẩm: Firebase Storage
 
 🧑‍💻 Cấu trúc thư mục (Android Studio)
-
+OrderDrinkApp/
+├── Activities/        # Các Activity chính (Home, Login, Order, Admin...)
+├── CustomAdapter/     # Adapter cho ListView/RecyclerView
+├── DAO/               # Data Access Object - thao tác dữ liệu SQLite
+├── DTO/               # Data Transfer Object - các model đối tượng như Drink, User...
+├── Database/          # SQLiteOpenHelper và kết nối cơ sở dữ liệu
+├── Fragments/         # Các Fragment cho giao diện linh hoạt
+├── README.md         # Các Fragment cho giao diện linh hoạt
 # 🔧 Hướng dẫn cài đặt
 
 1. Clone dự án:
